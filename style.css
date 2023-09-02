@@ -5,6 +5,12 @@
   padding: 0;
 }
 
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
 .location > h5 {
   color: rgb(0, 0, 0);
   font-weight: 800;
@@ -64,6 +70,7 @@
   width: 85%;
   overflow-x: auto;
   margin: auto;
+  margin-bottom: 20px;
 }
 
 .my-list {
@@ -96,7 +103,7 @@
 }
 
 .my-card-time {
-        width: fit-content;
+  width: fit-content;
   border-radius: 4px;
   background-color: rgb(248, 248, 248);
   padding: 0px 4px;
@@ -104,4 +111,144 @@
   font-weight: 700;
   font-size: 9px;
   color: rgb(54, 54, 54);
+}
+
+.my-card-weight {
+  font-size: 14px;
+  color: rgb(54, 54, 54);
+}
+
+.my-footer {
+  width: 85%;
+  margin: auto;
+}
+.row-1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.row-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.useful-links{
+  flex: 2;
+}
+
+.categories-links{
+  flex: 3;
+}
+
+table{
+  width: 100%;
+}
+
+td{
+  font-size: 14px;
+  color: #666666;
+  padding: 2px 10px;
+}
+
+
+.row-2 > p {
+  width: 30%;
+  text-align: justify;
+  font-size: 14px;
+  color: #666666;
+}
+
+.row-3 {
+  text-align: justify;
+  padding: 10px;
+  font-size: 14px;
+  color: #666666;
+}
+
+.download-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-section > p {
+  color: #666666;
+  font-size: 14px;
+  margin: 16px;
+  font-weight: 600;
+}
+
+.download-btns{
+  margin-inline: 2px;
+ background-color: #213b50;
+ color: white;
+ border-radius: 10px;
+ border: none;
+ padding: 10px;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-inline: 10px;
+}
+
+
+
+@media screen and (max-width:786px) {
+  nav, .row-2, .row-1{
+    flex-direction: column !important;
+  }
+
+  .vertical-line{
+    display: none;
+  }
+
+  .hero-section>img{
+    display: none;
+  }
+  .row-2 > p, .search-div{
+    width: 90%;
+    text-align: justify;
+    font-size: 14px;
+    color: #666666;
+  }
+
+  .row-1> div {
+    margin-top: 20px;
+  }
+
+  .row-1> div >h4 {
+    text-align: center;
+  }
+
+  td{
+    text-align: center;
+  }
+
+  .social{
+    margin-top: 10px;
+  }
+
+  .category-section{
+    display:flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+
+  }
 }
